@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Feedback | WFLP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">	
+</head>
+<body>
+	<!--Navigation  -->
+	<nav class="navbar-inverse navbar-fixed-top ">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">WFLP</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Профиль <span class="sr-only">(current)</span></a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Соревнования<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-submenu">
+								<a tabindex="-1" href="#">Чемпионат</a>
+								<ul class="dropdown-menu">
+									<li><a tabindex="-1" href="#">Таблица</a></li>
+									<li><a href="#">Календарь</a></li>
+									<li><a href="#">Бомбардиры</a></li>
+									<li><a href="#">Вратари</a></li>
+									<li><a href="#">Команды</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Кубок</a></li>
+							<li><a href="#">Суперкубок</a></li>
+							<li><a href="#">Еврокубок</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Другие Лиги</a></li>
+						</ul>
+					</li>
+					<li><a href="rules.html">Правила</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="feedback.html">ОБРАТНАЯ СВЯЗЬ</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Язык<span class="caret"></span></a>
+						<ul class="dropdown-menu2">
+							<li><a href="#">RUS</a></li>
+							<li><a href="#">ENG</a></li>
+						</ul>
+					</li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal-login">ЛОГИН</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal-registration">РЕГИСТРАЦИЯ</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--End of navigation  -->
+
+	<section id="feedback">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-center tagline">Обратная связь</h1>
+					<hr >
+				</div>
+				<div class="row">
+					<form action="">
+						<div class="form-group input-field">
+							<label for="exampleInputPassword1">Имя</label>
+							<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Имя">
+						</div>
+						<div class="form-group input-field">
+							<label for="exampleInputPassword1">Электронная почта</label>
+							<input class="form-control" id="exampleInputPassword1" placeholder="Электронная почта"  type="email">
+						</div>
+
+
+						<div class="form-group input-field">
+							<label for="exampleInputPassword1">Текст сообщения</label>
+							<textarea class="form-control" rows="3" placeholder="Текст сообщения"></textarea>
+						</div>	
+						<button type="submit" class="button">Отправить сообщение</button>	
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- Modal Registration window section-->
+	<section id="modal-registration">
+		<div class="modal fade" id="myModal-registration" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header bgc-modal">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">Регистрация</h3>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<form action="">
+								<div class="form-group input-field">
+									<label for="exampleInputPassword1">Имя</label>
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Имя" required>
+								</div>
+								<div class="form-group input-field">
+									<label for="exampleInputPassword1">Фамилия</label>
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Фамилия" required>
+								</div>
+								<div class="form-group input-field">
+									<label for="exampleInputPassword1">Страна</label>
+									<input type="text" class="form-control" id="exampleInputPassword1" placeholder="Страна" required>
+								</div>
+								<div class="form-group input-field">
+									<label for="exampleInputPassword1">Электронная почта</label>
+									<input class="form-control" id="exampleInputPassword1" placeholder="Электронная почта"  type="email" required>
+								</div> 
+								<div class="form-group input-field">
+									<label for="exampleInputPassword1">Пароль</label>
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль" required>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+						<button type="button" class="btn btn-primary">Зарегистрироваться</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End of modal Registration window section-->
+
+	<!-- Modal Login window section-->
+	<section id="modal-login">
+		<div class="modal fade" id="myModal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header bgc-modal">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="modal-title" id="myModalLabel">Логин</h3>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12">
+								<form action="">
+									<div class="form-group input-field">
+										<div class="icons text-center">
+											<a href="#"><i class="fa fa-vk fa-4x icon-vk" aria-hidden="true"></i></a>
+											<a href="#"><i class="fa fa-facebook fa-4x icon-face" aria-hidden="true"></i></a>
+										</div>
+										<p class="text-center text">ИЛИ</p>
+										<hr>
+										<label for="exampleInputPassword1">Электронная почта</label>
+										<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Электронная почта"  >
+									</div>
+
+									<div class="form-group input-field">
+										<label for="exampleInputPassword1">Пароль</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+						<button type="button" class="btn btn-primary">Зарегистрироваться</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of modal Login window section-->
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
